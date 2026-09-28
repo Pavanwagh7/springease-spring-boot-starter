@@ -22,9 +22,9 @@ In almost every Spring Boot project, backend developers repeatedly write identic
 | Module | Status | Description |
 | :--- | :---: | :--- |
 | **Starter Foundation** | ✅ Done | Core modular starter layout and Maven dependency engine. |
-| **API Response Starter** | 🚧 In Progress | Standardized generic `ApiResponse<T>` wrapper for all REST endpoints. |
-| **Global Error Shield** | ⏳ Planned | Zero-code automated `@RestControllerAdvice` exception mapping. |
-| **Validation Starter** | ⏳ Planned | Custom validation annotations (`@ValidPhone`, `@StrongPassword`). |
+| **API Response Starter** | ✅ Done | Standardized generic `ApiResponse<T>` wrapper for all REST endpoints. |
+| **Global Error Shield** | ✅ Done | Zero-code automated `@RestControllerAdvice` exception mapping (400, 404, 500). |
+| **Validation Starter** | 🚧 In Progress | Custom domain validation annotations (`@ValidPhoneNumber`, `@StrongPassword`). |
 | **Excel Import Engine** | ⏳ Planned | Streamlined Apache POI mapper converting spreadsheets to Java POJOs. |
 | **PDF Generator** | ⏳ Planned | Template-based dynamic PDF generation (receipts, reports, certificates). |
 
@@ -47,3 +47,21 @@ Clone the repository and compile using the Maven wrapper:
 git clone https://github.com/Pavanwagh7/springease-spring-boot-starter.git
 cd springease-spring-boot-starter
 ./mvnw clean compile
+```
+
+---
+
+## 👨‍💻 Author & Maintainer
+
+**Pavan Wagh**  
+*B.Tech in Electronics & Telecommunication Engineering*  
+*R. C. Patel Institute of Technology, Shirpur*
+
+[![GitHub](https://img.shields.io/badge/GitHub-Pavanwagh7-181717?style=flat&logo=github)](https://github.com/Pavanwagh7)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Pavan%20Wagh-0A66C2?style=flat&logo=linkedin)](https://www.linkedin.com/in/pavan-wagh-3040b2333/)
+[![LeetCode](https://img.shields.io/badge/LeetCode-pavan__wagh-FFA116?style=flat&logo=leetcode)](https://leetcode.com/u/pavan_wagh7350/)
+[![Email](https://img.shields.io/badge/Email-pawan.s.wagh%40gmail.com-D14836?style=flat&logo=gmail&logoColor=white)](mailto:pawan.s.wagh@gmail.com)
+
+---
+
+⭐ *If you find this starter helpful, give it a star on GitHub!*
