@@ -24,7 +24,7 @@ In almost every Spring Boot project, backend developers repeatedly write identic
 | **Starter Foundation** | ✅ Done | Core modular starter layout and Maven dependency engine. |
 | **API Response Starter** | ✅ Done | Standardized generic `ApiResponse<T>` wrapper for all REST endpoints. |
 | **Global Error Shield** | ✅ Done | Zero-code automated `@RestControllerAdvice` exception mapping (400, 404, 500). |
-| **Validation Starter** | ✅ Done | Custom domain validation annotations (`@ValidPhoneNumber`, `@StrongPassword`). |
+| **Validation Starter** | ✅ Done | Custom domain validation annotations (`@ValidPhoneNumber`, `@StrongPassword`,`@ValidText`, `@ValidEmail`). |
 | **Excel Import Engine** | ⏳ Planned | Streamlined Apache POI mapper converting spreadsheets to Java POJOs. |
 | **PDF Generator** | ⏳ Planned | Template-based dynamic PDF generation (receipts, reports, certificates). |
 

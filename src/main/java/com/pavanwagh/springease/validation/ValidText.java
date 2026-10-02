@@ -20,6 +20,7 @@ public @interface ValidText {
     int min() default 1;
     int max() default 255;
     boolean allowNumbers() default false;
+    boolean allowSpecialCharacters() default false;
     
     Class<?>[] groups() default {};
     Class<? extends Payload>[] payload() default {};
