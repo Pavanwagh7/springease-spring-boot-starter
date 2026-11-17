@@ -2,6 +2,7 @@
 
 [![Java](https://img.shields.io/badge/Java-17-orange.svg)](https://www.oracle.com/java/)
 [![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.3.4-brightgreen.svg)](https://spring.io/projects/spring-boot)
+[![](https://jitpack.io/v/Pavanwagh7/springease-spring-boot-starter.svg)](https://jitpack.io/#Pavanwagh7/springease-spring-boot-starter)
 [![Build](https://img.shields.io/badge/Build-Passing-success.svg)]()
 [![Status](https://img.shields.io/badge/Status-Active%20Development%20(v0.1)-blue.svg)]()
 
