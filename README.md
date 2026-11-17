@@ -39,14 +39,79 @@ In almost every Spring Boot project, backend developers repeatedly write identic
 
 ---
 
+## 📦 Quick Start (Maven via JitPack)
+
+### 1. Add the JitPack Repository to `pom.xml`
+```xml
+<repositories>
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
+</repositories>
+```
+
+### 2. Add the SpringEase Dependency
+```xml
+<dependency>
+    <groupId>com.github.Pavanwagh7</groupId>
+    <artifactId>springease-spring-boot-starter</artifactId>
+    <version>v0.0.1</version>
+</dependency>
+```
+
+---
+
+## ⚡ Usage Examples
+
+### 1. Standardized API Responses (`ApiResponse<T>`)
+```java
+@GetMapping("/users/{id}")
+public ResponseEntity<ApiResponse<User>> getUser(@PathVariable Long id) {
+    User user = userService.findById(id)
+            .orElseThrow(() -> new ResourceNotFoundException("User not found with ID: " + id));
+    return ResponseEntity.ok(ApiResponse.success("User fetched successfully", user));
+}
+```
+
+### 2. Custom Bean Validation Annotations
+```java
+public class RegisterRequest {
+    @ValidText(min = 2, max = 50)
+    private String fullName;
+
+    @ValidEmail
+    private String email;
+
+    @ValidPhoneNumber
+    private String phoneNumber;
+
+    @StrongPassword
+    private String password;
+}
+```
+
+### 3. Zero-Config Global Exception Handling
+`GlobalExceptionHandler` is auto-configured automatically via Spring Boot 3 SPI and handles:
+* `MethodArgumentNotValidException` → HTTP `400` with field-level error map
+* `ResourceNotFoundException` → HTTP `404`
+* Unhandled `Exception` → HTTP `500` with a safe error envelope
+
+To disable SpringEase's built-in exception handler and use your own, add this to `application.properties`:
+```properties
+springease.response.enabled=false
+```
+
+---
+
 ## 🚀 Building Locally
 
-Clone the repository and compile using the Maven wrapper:
+Clone the repository and install to your local `.m2` cache using the Maven wrapper:
 
 ```bash
 git clone https://github.com/Pavanwagh7/springease-spring-boot-starter.git
 cd springease-spring-boot-starter
-./mvnw clean compile
+./mvnw clean install
 ```
 
 ---

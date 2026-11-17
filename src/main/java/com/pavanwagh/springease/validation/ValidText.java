@@ -9,7 +9,7 @@ import java.lang.annotation.Target;
 import jakarta.validation.Constraint;
 import jakarta.validation.Payload;
 
-// The annotion
+// The annotation
 @Documented 
 @Constraint(validatedBy = TextValidator.class)
 @Target({ElementType.FIELD,ElementType.PARAMETER})

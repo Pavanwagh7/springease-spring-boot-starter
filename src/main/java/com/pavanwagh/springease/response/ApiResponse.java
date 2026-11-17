@@ -42,6 +42,10 @@ public class ApiResponse<T> {
         return new ApiResponse<>(false,status,message,null);
     }
 
+    public static <T> ApiResponse<T> error (String message, int status, T data) {
+        return new ApiResponse<>(false,status,message,data);
+    }
+
 
     // Getter and Setters
     public boolean isSuccess() {

@@ -39,7 +39,7 @@ public class TextValidator implements ConstraintValidator<ValidText,String>{
             for (int i = 0; i < text.length(); i++) {
                 char ch = text.charAt(i);
 
-                // Allow character ,space and hypen
+                // Allow letters, space, and hyphen
                 if (Character.isLetter(ch) || ch == ' ' || ch == '-') {
                     continue;
                 }
