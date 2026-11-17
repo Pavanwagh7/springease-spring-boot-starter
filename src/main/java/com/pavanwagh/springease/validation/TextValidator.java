@@ -2,7 +2,6 @@ package com.pavanwagh.springease.validation;
 
 import jakarta.validation.ConstraintValidator;
 import jakarta.validation.ConstraintValidatorContext;
-import jakarta.validation.Valid;
 
 public class TextValidator implements ConstraintValidator<ValidText,String>{
     private int min;
